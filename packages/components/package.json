@@ -1,23 +1,28 @@
 {
-  "name": "@shacn/components",
-  "version": "1.0.0",
+  "name": "@ys/components",
+  "version": "0.0.1",
+  "private": true,
   "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
+  "main": "./src/index.ts",
+  "types": "./src/index.ts",
+  "exports": {
+    ".": {
+      "types": "./src/index.ts",
+      "import": "./src/index.ts"
+    },
+    "./ui/*": {
+      "types": "./src/ui/*/index.ts",
+      "import": "./src/ui/*/index.ts"
+    },
+    "./lib/utils": {
+      "types": "./src/lib/utils.ts",
+      "import": "./src/lib/utils.ts"
+    }
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "dependencies": {
-    "class-variance-authority": "^0.7.1",
-    "clsx": "^2.1.1",
-    "lucide-vue-next": "^0.462.0",
-    "radix-vue": "^1.9.10",
-    "tailwind-merge": "^2.5.5"
-  },
+  "dependencies": {},
   "devDependencies": {
     "@chromatic-com/storybook": "3.2.2",
     "@storybook/addon-essentials": "8.4.6",
@@ -27,11 +32,8 @@
     "@storybook/test": "8.4.6",
     "@storybook/vue3": "8.4.6",
     "@storybook/vue3-vite": "^8.4.6",
-    "@types/node": "^22.10.1",
-    "autoprefixer": "^10.4.20",
-    "postcss": "^8.4.49",
-    "storybook": "8.4.6",
-    "tailwindcss": "^3.4.15",
-    "tailwindcss-animate": "^1.0.7"
+    "@unovis/ts": "^1.4.5",
+    "@unovis/vue": "^1.4.5",
+    "storybook": "8.4.6"
   }
 }

@@ -1,0 +1,37 @@
+# 技术栈专长
+- TypeScript, Vue 3, Vite, Vue Router, Pinia
+- Tailwind CSS, Headless UI, shadcn-vue
+
+# 代码风格与结构
+- 使用 TypeScript 编写简洁可维护的代码
+- 采用函数式和声明式编程模式
+- 使用描述性变量名（如：isLoading, hasError）
+- 文件组织：每个文件只包含相关内容
+
+# 命名规范
+- 目录使用小写带横线（如：components/auth-wizard）
+- 组件使用大驼峰命名（如：AuthWizard.vue）
+- 组合式函数使用小驼峰（如：useAuthState.ts）
+
+# TypeScript 使用
+- 优先使用 interface 而非 type
+- 使用 Map 代替 enum
+- 使用带 TypeScript 接口的函数式组件
+
+# Vue 3 最佳实践
+- 统一使用 `<script setup lang="ts">` 语法
+- 使用 ref, reactive, computed 管理响应式状态
+- 适时使用 provide/inject 进行依赖注入
+- 抽取可复用逻辑到组合式函数
+
+# 性能优化
+- 异步组件使用 Suspense 包装
+- 非关键组件使用动态加载
+- 图片优化：使用 WebP、添加尺寸、懒加载
+- 使用 Vite 构建优化，实现代码分割
+
+# 测试与文档
+- 使用 Vitest 编写单元测试
+- 为复杂逻辑添加清晰注释
+- 使用 JSDoc 注释改善 IDE 智能提示
+- 使用 Storybook 编写组件文档，show code 使用 source code
